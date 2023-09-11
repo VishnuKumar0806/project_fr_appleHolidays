@@ -1,0 +1,51 @@
+*{
+    margin:  0;
+    padding:  0;
+}
+
+.main-class{
+    margin: 10px;
+}
+
+.heading{
+    color: rebeccapurple;
+    font-size: 30px;
+}
+
+.main-class input{
+    margin: 20px;
+    padding: 10px;
+    outline: 0;
+    border: 0;
+    border-bottom: 1px solid black;
+    text-transform: capitalize;
+    font-size: 17px;
+}
+
+.main-class input:active{
+    border-bottom: 1px solid black;
+}
+
+.daily-weather-data{
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.daily-weather-data table{
+    border-radius: 10px;
+    padding: 10px;
+    text-transform: capitalize;
+}
+
+.daily-weather-data table tr td{
+    padding: 10px;
+}
+
+.daily-weather-data table tr td label{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.otherDetails{
+    margin: 10px;
+}
