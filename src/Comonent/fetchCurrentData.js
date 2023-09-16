@@ -45,54 +45,40 @@ const CurrentWeather = () => {
                     onChange={(e) => {
                         setlongtitude(e.target.value);
                     }} />
-                    <p>
-                        {
-                            dailyweatherData.timezone
-                        }
-                    </p>
-                  {
+                <p>
+                    {
+                        dailyweatherData.timezone
+                    }
+                </p>
+                {
                     dailyweatherData.daily &&
                     dailyweatherData.daily.map((value, key) => {
                         return (
                             <div className="daily-weather-data" key={key}>
-                                <p>
-                                    {value.clouds}
-                                </p>
-                                 {/* <table style={{ border: '1px solid black' }}>
-                                    {
-                                        value.daily((value, key) => {
-                                            return (
-                                                <tbody>
-                                                    <tr>
-                                                        <td>
-                                                            <p></p>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <label>
-                                                                clouds
-                                                            </label>
-                                                            <p>{value.clouds}</p>
-                                                        </td>
-                                                        <td>
-                                                            <label>humidity</label>
-                                                            <p>{value.humidity}</p>
-                                                        </td>
-                                                        <td>
-                                                            <label>sunrise</label>
-                                                            <p>{value.sunrise}</p>
-                                                        </td>
-                                                        <td>
-                                                            <label>sunset</label>
-                                                            <p>{value.sunset}</p>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            )
-                                        })
-                                    }
-                                </table>  */}
+                                <table style={{ border: '1px solid black' }}>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <label>
+                                                    clouds
+                                                </label>
+                                                <p>{value.clouds}</p>
+                                            </td>
+                                            <td>
+                                                <label>humidity</label>
+                                                <p>{value.humidity}</p>
+                                            </td>
+                                            <td>
+                                                <label>sunrise</label>
+                                                <p>{value.sunrise}</p>
+                                            </td>
+                                            <td>
+                                                <label>sunset</label>
+                                                <p>{value.sunset}</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                                 <div className="otherDetails">
                                     <p>Other details</p>
                                     <p>Day description : {value.weather[0].description}</p>
@@ -101,9 +87,7 @@ const CurrentWeather = () => {
                         )
                     })
                 }
-                
             </div>
-
         </React.Fragment>
     )
 }
